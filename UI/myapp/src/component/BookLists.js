@@ -1,0 +1,61 @@
+function BookLists(){
+    const books=[{
+        id:1,
+        Name:"atomichabits",
+        auther:"satheesh",
+        price:2000
+    },
+    {
+        id:2,
+        Name:"jaibheem",
+        auther:"surya",
+        price:3000
+    },{
+        id:3,
+        Name:"hanuman",
+        auther:"teja",
+        price:4000
+    },
+    {
+        id:4,
+        Name:"devara",
+        auther:"ntr",
+        price:5000
+    },{
+        id:5,
+        Name:"kgf",
+        auther:"yash",
+        price:6000
+    },{
+        id:6,
+        Name:"vikram",
+        auther:"lokesh",
+        price:7000
+    },
+]
+return(
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>AUTHOR</th>
+          <th>PRICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map(book => (
+          <tr key={book.id}>
+            <td>{book.id}</td>
+            <td>{book.Name}</td>
+            <td>{book.auther}</td>
+            <td>{book.price}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)
+}
+export default BookLists;
