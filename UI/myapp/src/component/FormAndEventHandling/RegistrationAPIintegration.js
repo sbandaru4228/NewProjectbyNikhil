@@ -6,7 +6,7 @@ import axios from 'axios';
 // refactor the code to use useRef instaed of useState for the user object
 // change the input fields to use the ref object to get the value of the input fields
 
-// Changes by Sony
+// Changes by Sony b
 function RegistrationAPIintegration() {
 
     const nameRef = useRef(null);
